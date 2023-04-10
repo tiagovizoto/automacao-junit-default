@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "State": {
+      "type": "integer"
+    },
+    "Data": {
+      "type": "object",
+      "properties": {
+        "requertAt": {
+          "type": "string"
+        },
+        "expiresIn": {
+          "type": "number"
+        },
+        "tokeyType": {
+          "type": "string"
+        },
+        "accessToken": {
+          "type": "string"
+        },
+        "loggedUser": {
+          "type": "object",
+          "properties": {
+            "UserId": {
+              "type": "integer"
+            },
+            "FirstName": {
+              "type": "string"
+            },
+            "LastName": {
+              "type": "string"
+            },
+            "Username": {
+              "type": "string"
+            },
+            "Email": {
+              "type": "string"
+            },
+            "Status": {
+              "type": "boolean"
+            },
+            "UserProfileId": {
+              "type": "integer"
+            },
+            "ProfileName": {
+              "type": "string"
+            },
+            "CreatedBy": {
+              "type": "integer"
+            },
+            "CreatedDate": {
+              "type": "string"
+            },
+            "LastUpdatedBy": {
+              "type": "integer"
+            },
+            "LastUpdatedName": {
+              "type": "string"
+            },
+            "LastUpdatedDate": {
+              "type": "string"
+            },
+            "Links": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "UserId",
+            "FirstName",
+            "LastName",
+            "Username",
+            "Email",
+            "Status",
+            "UserProfileId",
+            "ProfileName",
+            "CreatedBy",
+            "CreatedDate",
+            "LastUpdatedBy",
+            "LastUpdatedName",
+            "LastUpdatedDate",
+            "Links"
+          ]
+        }
+      },
+      "required": [
+        "requertAt",
+        "expiresIn",
+        "tokeyType",
+        "accessToken",
+        "loggedUser"
+      ]
+    }
+  },
+  "required": [
+    "State",
+    "Data"
+  ]
+}

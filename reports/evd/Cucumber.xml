@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.427">
+<testcase classname="Validar fluxo regressivo para criar uma apuração" name="Validar o fluxo regressivo do IcmsIPI até a geração de uma nova apuração" time="10.328">
+<system-out><![CDATA[Dado que acesso a url do SAP................................................passed
+E realizo login com usuario valido..........................................passed
+Dado que estou na página na home............................................passed
+Quando acesso o menu do produto ICMS_IPI....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
