@@ -777,4 +777,15 @@ public class SeleniumRobotsTool implements IRNRobotsTool {
 		throw new NotImplementedException();
 	}
 
+	public void switchIframe(String... id){
+		driver.switchTo().defaultContent();
+		WebElement iframe;
+
+		if(id.length > 0){
+			for(int i = 0; i < id.length; i++){
+				iframe = driver.findElement(By.id(id[i]));
+				driver.switchTo().frame(iframe);
+			}
+		}
+	}
 }
